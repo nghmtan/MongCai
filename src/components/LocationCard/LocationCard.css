@@ -1,0 +1,52 @@
+.location-card {
+  width: 400px; /* Adjust width as needed */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  display: inline-block; /* For side-by-side display */
+}
+
+.location-image {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+.location-info {
+  padding: 16px;
+}
+
+.location-title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.location-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.read-more-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}

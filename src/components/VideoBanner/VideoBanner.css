@@ -1,0 +1,45 @@
+/* VideoBanner.css */
+.video-banner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 600px; /* Fixed height for the video banner */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-banner__video-container {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.video-banner__video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Fit the entire video within the container without cropping or stretching */
+}
+
+.video-banner__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* Adjust text color */
+  z-index: 1;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust background color and opacity */
+}
