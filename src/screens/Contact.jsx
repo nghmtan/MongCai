@@ -1,5 +1,5 @@
 
-import { Card } from 'flowbite-react';
+
 import PriceCard from '../components/PriceCard/PriceCard';
 const Contact = () => {
     return (
@@ -11,9 +11,9 @@ const Contact = () => {
             <div className=' flex justify-evenly'>
 
 
-                <PriceCard price={'200,000'} />
-                <PriceCard price={'500,000'} />
-                <PriceCard price={'800,000'} />
+                <PriceCard price={'200,000'} type={1} plan={'Gói cơ bản'} />
+                <PriceCard price={'500,000'} type={2} plan={'Gói VIP'} />
+                <PriceCard price={'800,000'} type={3} plan={'Gói Luxury'} />
             </div>
         </div>
     )

@@ -20,14 +20,15 @@ import FooterCompo from './components/Footer/Footer'
 import AboutUs from './screens/AboutUs'
 import Contact from './screens/Contact'
 import Home from './screens/Home'
+import GolfClub from './screens/GolfClub'
 function App() {
   return (
     <div style={{ height: 800 }} id='outer-container'>
       <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
-      <main id="page-wrap">
+      <main id="page-wrap" className='bg-[#e0dede]'>
         <NavBar />
-        <AboutUs />
-        <Contact />
+        <GolfClub />
+
         <FooterCompo />
       </main>
     </div>
