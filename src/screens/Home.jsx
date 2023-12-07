@@ -97,7 +97,7 @@ function Home() {
 
                 </div>
             </div>
-            <div className='bg-[#e0dede] p-4 sm:p-8 md:p-12 xl:p-24 mt-1'>
+            <div className='bg-[#e0dede] p-0 sm:p-8 md:p-12 xl:p-24 mt-1'>
                 <div className='mb-20'>
                     <p className='text-center italic lg:text-3xl md:text-2xl sm:text-xl text-lg xl:text-4xl mb-6 font-extrabold'>ĐỊA ĐIỂM</p>
                     <hr className="line" style={{
