@@ -20,7 +20,9 @@ import phinhho from '../assets/phinhho.jpg'
 import mongcaibanner from '../assets/mongcaibanner.jpg'
 import muisavi from '../assets/muisavi.jpg'
 import bien from '../assets/bien.jpg'
-
+import img1 from '../assets/img1.png'
+import img2 from '../assets/img2.png'
+import img3 from '../assets/img3.png'
 function Home() {
     return (
         <div>
@@ -153,7 +155,7 @@ function Home() {
                     </div>
                     <div className='bg-gray-200 w-[45%] flex flex-col gap-10 ' style={{ borderRadius: 10 }}>
                         <div className='flex gap-12 justify-center'>
-                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
+                            <img style={{ borderRadius: 10 }} src={img3} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
                                 <p className='text-xl font-bold description'>Làm chủ cây xanh</p>
                                 <p className='description'>Khám phá nghệ thuật gạt bóng và tinh chỉnh trò chơi ngắn của bạn bằng các mẹo chuyên môn của chúng tôi. Nâng cao hiệu suất của bạn trên sân cỏ bằng độ chính xác và khả năng kiểm soát.</p>
@@ -166,7 +168,7 @@ function Home() {
                             </div>
                         </div>
                         <div className='flex gap-12'>
-                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
+                            <img style={{ borderRadius: 10 }} src={img1} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
                                 <p className='text-xl font-bold  description'>Truyền thuyết về Fairway</p>
                                 <p className='description'>Đi sâu vào lịch sử môn chơi gôn và tìm hiểu về những tay vợt huyền thoại đã định hình nên môn chơi mà chúng ta yêu thích ngày nay.</p>
@@ -179,7 +181,7 @@ function Home() {
                             </div>
                         </div>
                         <div className='flex gap-12'>
-                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
+                            <img style={{ borderRadius: 10 }} src={img2} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
                                 <p className='text-xl font-bold description '>Thiết bị chơi gôn cần thiết</p>
                                 <p className='description'>Hãy chuẩn bị để thành công! Khám phá tuyển tập các loại gậy, bóng và phụ kiện hàng đầu của chúng tôi sẽ tạo nên sự khác biệt trong trận đấu của bạn.</p>
