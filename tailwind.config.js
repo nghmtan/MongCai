@@ -3,5 +3,5 @@ export const content = ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", 'node_modu
 export const theme = {
   extend: {},
 };
-export const plugins = [('flowbite/plugin')];
+export const plugins = [];
 
