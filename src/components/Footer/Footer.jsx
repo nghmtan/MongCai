@@ -15,7 +15,8 @@ function FooterCompo() {
                         <Footer.Brand
                             src={logo}
                             alt="Flowbite Logo"
-                            style={{ width: '150px', height: '150px' }}
+                            className='w-[60px] h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px]'
+
                         />
                         <div className="max-w-md">
                             <div className="mb-2 block">

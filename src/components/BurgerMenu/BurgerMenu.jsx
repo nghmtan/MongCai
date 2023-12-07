@@ -9,7 +9,7 @@ function BurgerMenu() {
         setIsOpen(false);
     };
     return (
-        <div className='hidden lg:block'>
+        <div className='block'>
             <Menu right isOpen={isOpen} onStateChange={({ isOpen }) => setIsOpen(isOpen)}>
 
                 <Link to={"/"} className="menu-item mb-[35px]" onClick={closeMenu} >
