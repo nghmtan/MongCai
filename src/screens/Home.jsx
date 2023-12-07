@@ -1,11 +1,16 @@
 
 import golfbanner from '../assets/banner.jpg'
-import NavBar from '../components/StickyNavBar/StickyNavBar'
+
 import VideoBanner from '../components/VideoBanner/VideoBanner'
 import ReadMore from '../components/ReadMore/ReadMore'
 import golftours from '../assets/golftours.png'
 import golfpackages from '../assets/golfpackages.png'
 import hotel from '../assets/hotel.png'
+import mc2 from '../assets/mc2.jpeg'
+import mc3 from '../assets/mc3.jpeg'
+import mc4 from '../assets/mc4.jpeg'
+import mc5 from '../assets/mc5.jpeg'
+
 import qualuuniem from '../assets/qualuuniem.png'
 import LocationCard from '../components/LocationCard/LocationCard'
 import { Button, Carousel } from 'flowbite-react';
@@ -15,6 +20,7 @@ import phinhho from '../assets/phinhho.jpg'
 import mongcaibanner from '../assets/mongcaibanner.jpg'
 import muisavi from '../assets/muisavi.jpg'
 import bien from '../assets/bien.jpg'
+
 function Home() {
     return (
         <div>
@@ -139,18 +145,18 @@ function Home() {
                     <div className="h-[540px] w-[50%]">
                         <Carousel>
                             <img src={mongcaibanner} alt="..." />
-                            <img src={mongcaibanner} alt="..." />
-                            <img src={mongcaibanner} alt="..." />
-                            <img src={mongcaibanner} alt="..." />
-                            <img src={mongcaibanner} alt="..." />
+                            <img src={mc2} alt="..." />
+                            <img src={mc3} alt="..." />
+                            <img src={mc4} alt="..." />
+                            <img src={mc5} alt="..." />
                         </Carousel>
                     </div>
                     <div className='bg-gray-200 w-[45%] flex flex-col gap-10 ' style={{ borderRadius: 10 }}>
                         <div className='flex gap-12 justify-center'>
                             <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
-                                <p className='text-xl font-bold description'>Rộ thông tin Jon Rahm chuẩn bị gia nhập LIV Golf</p>
-                                <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor nobis neque volu!</p>
+                                <p className='text-xl font-bold description'>Làm chủ cây xanh</p>
+                                <p className='description'>Khám phá nghệ thuật gạt bóng và tinh chỉnh trò chơi ngắn của bạn bằng các mẹo chuyên môn của chúng tôi. Nâng cao hiệu suất của bạn trên sân cỏ bằng độ chính xác và khả năng kiểm soát.</p>
                                 <Button style={{
                                     position: 'absolute'
                                     ,
@@ -162,8 +168,8 @@ function Home() {
                         <div className='flex gap-12'>
                             <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
-                                <p className='text-xl font-bold  description'>Rộ thông tin Jon Rahm chuẩn bị gia nhập LIV Golf</p>
-                                <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor nobis neque volu!</p>
+                                <p className='text-xl font-bold  description'>Truyền thuyết về Fairway</p>
+                                <p className='description'>Đi sâu vào lịch sử môn chơi gôn và tìm hiểu về những tay vợt huyền thoại đã định hình nên môn chơi mà chúng ta yêu thích ngày nay.</p>
                                 <Button style={{
                                     position: 'absolute'
                                     ,
@@ -175,8 +181,8 @@ function Home() {
                         <div className='flex gap-12'>
                             <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
-                                <p className='text-xl font-bold description '>Rộ thông tin Jon Rahm chuẩn bị gia nhập LIV Golf</p>
-                                <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor nobis neque volu!</p>
+                                <p className='text-xl font-bold description '>Thiết bị chơi gôn cần thiết</p>
+                                <p className='description'>Hãy chuẩn bị để thành công! Khám phá tuyển tập các loại gậy, bóng và phụ kiện hàng đầu của chúng tôi sẽ tạo nên sự khác biệt trong trận đấu của bạn.</p>
                                 <Button style={{
                                     position: 'absolute'
                                     ,
