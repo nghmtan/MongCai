@@ -18,7 +18,7 @@ import bien from '../assets/bien.jpg'
 function Home() {
     return (
         <div>
-           
+
             <VideoBanner />
             <div className=' bg-[#e0dede] py-24 text-[#162e48] text-center '>
                 <p className='text-center italic text-4xl mb-6 font-extrabold'>CHÀO MỪNG ĐẾN VỚI MÓNG CÁI</p>
@@ -134,9 +134,9 @@ function Home() {
 
                     </p>
                 </div>
-                <div className='   gap-16  flex '>
+                <div className='   gap-16  flex items-center '>
 
-                    <div className="h-[450px] w-[50%]">
+                    <div className="h-[540px] w-[50%]">
                         <Carousel>
                             <img src={mongcaibanner} alt="..." />
                             <img src={mongcaibanner} alt="..." />
@@ -146,8 +146,8 @@ function Home() {
                         </Carousel>
                     </div>
                     <div className='bg-gray-200 w-[45%] flex flex-col gap-10 ' style={{ borderRadius: 10 }}>
-                        <div className='flex gap-12'>
-                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[120px] h-[120px]' alt="" />
+                        <div className='flex gap-12 justify-center'>
+                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
                                 <p className='text-xl font-bold description'>Rộ thông tin Jon Rahm chuẩn bị gia nhập LIV Golf</p>
                                 <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor nobis neque volu!</p>
@@ -160,7 +160,7 @@ function Home() {
                             </div>
                         </div>
                         <div className='flex gap-12'>
-                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[120px] h-[120px]' alt="" />
+                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
                                 <p className='text-xl font-bold  description'>Rộ thông tin Jon Rahm chuẩn bị gia nhập LIV Golf</p>
                                 <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor nobis neque volu!</p>
@@ -173,7 +173,7 @@ function Home() {
                             </div>
                         </div>
                         <div className='flex gap-12'>
-                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[120px] h-[120px]' alt="" />
+                            <img style={{ borderRadius: 10 }} src={golftours} className='w-[170px] h-[170px]' alt="" />
                             <div className='relative'>
                                 <p className='text-xl font-bold description '>Rộ thông tin Jon Rahm chuẩn bị gia nhập LIV Golf</p>
                                 <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor nobis neque volu!</p>

@@ -7,19 +7,12 @@ import club4 from '../assets/club4.png'
 import avatar from '../assets/avatar.png'
 import groupofpeople from '../assets/lichsu.png'
 import service from '../assets/gioithieu.png'
+import { Link } from 'react-router-dom';
 const GolfClub = () => {
     return (
-        <div className='bg-[#e0dede] pb-20 '>
-            <div className="h-[600px] ">
-                <Carousel>
+        <div className='bg-[#e0dede] py-20 '>
 
-                    <img src={club1} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
-                    <img src={club2} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
-                    <img src={club3} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
-                    <img src={club4} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
-                </Carousel>
-            </div>
-            <div className=' xl:px-96 lg:px-70 md:px-50 px-24 mb-24 mt-10'>
+            <div className=' xl:px-96 lg:px-70 md:px-50 px-24 '>
                 <div className='mb-5'>
                     <p className='text-center italic text-4xl mb-6 font-extrabold'>Câu lạc bộ Golf Móng Cái</p>
                     <hr className="line" style={{
@@ -41,6 +34,15 @@ const GolfClub = () => {
                     </div>
                 </Avatar>
             </div>
+            <div className="h-[600px] mb-24 mt-10 ">
+                <Carousel>
+
+                    <img src={club1} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
+                    <img src={club2} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
+                    <img src={club3} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
+                    <img src={club4} className=' h-[600px] w-full' style={{ objectFit: 'contain' }} />
+                </Carousel>
+            </div>
             <div className='bg-[#e0dede] text-[#162e48]  px-28'>
                 <div className='flex items-center gap-32 mb-20 leading-7'>
                     <img src={service} style={{ width: '45%', height: 'auto', borderRadius: 20 }} ></img>
@@ -57,7 +59,9 @@ const GolfClub = () => {
                 <div className='text-center xl:px-96 lg:px-70 md:px-50 px-24 ' >
 
                     <div className='items-center justify-center text-center mt-5'>
-                        <Button size="xl" className='text-center justify-center items-center  px-10 text-[white]' style={{ margin: '0 auto', color: 'white' }}>Liên hệ</Button>
+                        <Link to={"/contact"}>
+                            <Button size="xl" className='text-center justify-center items-center  px-10 text-[white]' style={{ margin: '0 auto', color: 'white' }}>Liên hệ</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

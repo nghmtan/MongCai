@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import img from '../../assets/mc1.png'
 
 const NavBar = () => {
@@ -10,10 +11,10 @@ const NavBar = () => {
 
                 <div className='flex flex-row gap-16 justify-center items-center font-bold'>
                     <img src={img} className='w-[140px] h-auto ' />
-                    <p>TRANG CHỦ</p>
-                    <p>VỀ CHÚNG TÔI</p>
-                    <p>CLB GOLF</p>
-                    <p>LIÊN HỆ</p>
+                    <Link to={"/"}>TRANG CHỦ</Link>
+                    <Link to={"/about"}>VỀ CHÚNG TÔI</Link>
+                    <Link to={"/club"}>CLB GOLF</Link>
+                    <Link to={"/contact"}>LIÊN HỆ</Link>
                     <p>SỰ KIỆN</p>
                 </div>
 

@@ -1,38 +1,32 @@
-import './App.css'
-import BurgerMenu from './components/BurgerMenu/BurgerMenu'
-import golfbanner from './assets/banner.jpg'
-import NavBar from './components/StickyNavBar/StickyNavBar'
-import VideoBanner from './components/VideoBanner/VideoBanner'
-import ReadMore from './components/ReadMore/ReadMore'
-import golftours from './assets/golftours.png'
-import golfpackages from './assets/golfpackages.png'
-import hotel from './assets/hotel.png'
-import qualuuniem from './assets/qualuuniem.png'
-import LocationCard from './components/LocationCard/LocationCard'
-import { Button, Carousel } from 'flowbite-react';
-
-
-import phinhho from './assets/phinhho.jpg'
-import mongcaibanner from './assets/mongcaibanner.jpg'
-import muisavi from './assets/muisavi.jpg'
-import bien from './assets/bien.jpg'
-import FooterCompo from './components/Footer/Footer'
-import AboutUs from './screens/AboutUs'
-import Contact from './screens/Contact'
+import './App.css';
+import BurgerMenu from './components/BurgerMenu/BurgerMenu';
+import NavBar from './components/StickyNavBar/StickyNavBar';
+import FooterCompo from './components/Footer/Footer';
+// Import your screen components here
+import AboutUs from './screens/AboutUs';
 import Home from './screens/Home'
-import GolfClub from './screens/GolfClub'
+import Contact from './screens/Contact';
+import GolfClub from './screens/GolfClub';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div style={{ height: 800 }} id='outer-container'>
-      <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
-      <main id="page-wrap" className='bg-[#e0dede]'>
-        <NavBar />
-        <GolfClub />
-
-        <FooterCompo />
-      </main>
-    </div>
-  )
+    <BrowserRouter>
+      <div style={{ height: 800 }} id='outer-container'>
+        <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
+        <main id="page-wrap" className='bg-[#e0dede]'>
+          <NavBar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/club" element={<GolfClub />} />
+            {/* Add more routes for other screens/components */}
+          </Routes>
+          <FooterCompo />
+        </main>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

@@ -2,6 +2,7 @@ import React from 'react'
 import service from '../assets/service.png'
 import { Button } from 'flowbite-react';
 import groupofpeople from '../assets/groupofpeople.png'
+import { Link } from 'react-router-dom';
 const AboutUs = () => {
     return (
         <div className='bg-[#e0dede] text-[#162e48] py-10 px-28'>
@@ -29,7 +30,9 @@ const AboutUs = () => {
                     <p>Hãy liên hệ với chúng tôi nếu bạn tìm kiếm một điểm đến chơi gôn phù hợp với nhu cầu và sở thích của bạn cũng như hỗ trợ bạn trong việc thiết kế chuyến đi chơi golf của mình. Chúng tôi đảm bảo với bạn một hành trình chơi golf đáng chú ý.</p>
                 </div>
                 <div className=' items-center justify-center text-center mt-5'>
-                    <Button size="xl" className='text-center justify-center items-center  px-10 text-[white]' style={{ margin: '0 auto', color: 'white' }}>Liên hệ</Button>
+                    <Link to={"/contact"}>
+                        <Button size="xl" className='text-center justify-center items-center  px-10 text-[white]' style={{ margin: '0 auto', color: 'white' }}>Liên hệ</Button>
+                    </Link>
                 </div>
             </div>
         </div>
